@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Gemini Setup
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyBsyHbv-sYRIBSS_lx9WuLCZVPTotm78Lw");
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 // ✅ Serve index.html for GET /
